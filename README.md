@@ -1,2 +1,2 @@
-# google-homepage
-# Link: http://www.theodinproject.com/web-development-101/html-css?ref=lnav
+# Google Homepage Replica
+# Link: http://seerocode.github.io/google-homepage/

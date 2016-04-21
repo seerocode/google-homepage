@@ -20,7 +20,7 @@ div {
 }
 
 
-/* -- NAV -- */
+/* -- NAV (li styling exists in footer section) -- */
 .right-nav {
 	float: right;
 	padding-right: 20px;
@@ -109,7 +109,7 @@ footer {
 	background-color: #f2f2f2;
 	border-top: 1px solid #c6c6c6;
 }
-footer > ul li {
+footer li, .right-nav li {
 	display: inline-block;
 	padding: 0 8px 0px 8px;
 }

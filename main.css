@@ -1,6 +1,6 @@
 /* -- CSS SYNTAX GROUPING --
 1. Position: position, top, bottom, etc.;
-2. Box Model: display, float, height, width, margin, padding, etc.;
+2. Box Model: display, clear, float, height, width, margin, padding, etc.;
 3. Typographic: font-size, font-family, line-height, color, etc.;
 4. Visual: border, border-radius, box-shadow, background, opacity, etc.;
 -- */
@@ -19,9 +19,9 @@ div {
 	margin: auto;
 }
 
-li {
-	padding: 0 8px 0px 8px;
+footer > li {
 	display: inline-block;
+	padding: 0 8px 0px 8px;
 }
 
 
@@ -72,36 +72,35 @@ td {
 
 
 /* -- SEARCH BAR & BUTTONS --*/
-.search {
-	text-align: center;
-	clear: right;
-}
-input[type="text"] {
-	border: 1px solid silver;
-	margin-bottom: 30px;
-	margin-top: 30px;
-}
 input {
 	padding: 10px;
-	color: #95a5a6;
 }
-input[type="submit"] {
+.search {
+	clear: right;
+	text-align: center;
+}
+#search-bar {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px solid silver;
+}
+.submit {
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 0 16px;
 	height: 36px;
-	line-height: 27px;
-	background: #f2f2f2;
 	color: #757575;
 	font-weight: bold;
-	padding: 0 16px;
+	line-height: 27px;
 	text-align: center;
+	background: #f2f2f2;
 	border: 1px solid #f2f2f2;
 	border-radius: 2px;
-	margin-right: 2px;
-	margin-left: 2px;
 }
-input[type="submit"]:hover {
+.submit:hover {
 	color: #000;
-	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 	border: 1px solid #e4e4e4;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
 
@@ -110,16 +109,16 @@ footer {
 	position: absolute;
 	bottom: 0;
 	height: auto;
+	width: 100%;
 	color: #666;
 	background-color: #f2f2f2;
 	border-top: 1px solid #c6c6c6;
-	width: 100%;
 }
 .footer-left {
-	float: left;
 	padding-left: 20px;
+	float: left;
 }
 .footer-right {
-	float: right;
 	padding-right: 20px;
+	float: right;
 }

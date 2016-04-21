@@ -52,7 +52,7 @@ div {
 	position: relative;
 	top: 5px;
 }
-td {
+.boxes td {
 	height: 2px;
 	width: 2px;
 	background-color: #222;
